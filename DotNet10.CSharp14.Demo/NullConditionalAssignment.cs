@@ -26,6 +26,10 @@
             order?.Status = "Processed";
             order?.UpdatedAt = DateTime.UtcNow;
 
+            // Also possible to use with nested properties:
+            order?.Customer?.Name = "Henrique";
+            order?.Customer?.ShippingAddress?.City = "Seattle";
+
             Console.WriteLine(@"Safe assignment completed, using ""?."".");
         }
         #endregion
