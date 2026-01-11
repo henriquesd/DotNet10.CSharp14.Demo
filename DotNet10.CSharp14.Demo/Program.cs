@@ -32,3 +32,18 @@ Console.WriteLine($"Uppercase Status: {order2.UppercaseStatus}");
 
 Console.WriteLine("--------------------------");
 #endregion
+
+#region The field keyword
+var productAutoImplementedProperty = new ProductAutoImplementedProperty();
+productAutoImplementedProperty.Code = "ABC";
+Console.WriteLine($"Product: {productAutoImplementedProperty.Code}");
+
+var productPreviousVersion = new ProductPreviousVersion();
+productPreviousVersion.Code = "DEF";
+Console.WriteLine($"Product: {productPreviousVersion.Code}");
+
+var product = new Product();
+product.Code = "GHI";
+Console.WriteLine($"Product using the new field keyword: {product.Code}");
+Console.WriteLine("--------------------------");
+#endregion
