@@ -47,3 +47,11 @@ product.Code = "GHI";
 Console.WriteLine($"Product using the new field keyword: {product.Code}");
 Console.WriteLine("--------------------------");
 #endregion
+
+#region Unbound generic types and nameof
+Console.WriteLine("Unbound generic types and nameof:");
+var unboundGenericTypesNameof = new UnboundGenericTypesNameof();
+unboundGenericTypesNameof.DemoBeforeCSharp14();
+unboundGenericTypesNameof.DemoCSharp14();
+Console.WriteLine("--------------------------");
+#endregion
