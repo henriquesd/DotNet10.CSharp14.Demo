@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DotNet10.CSharp14.Demo
+﻿namespace DotNet10.CSharp14.Demo
 {
     public class NullConditionalAssignment
     {
@@ -33,11 +31,5 @@ namespace DotNet10.CSharp14.Demo
         #endregion
 
         private Order? GetOrder() => null;
-    }
-
-    public class Order
-    {
-        public string? Status { get; set; }
-        public DateTime? UpdatedAt { get; set; }
     }
 }
